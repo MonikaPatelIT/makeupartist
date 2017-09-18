@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Seema - Makeup Artist</title>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=130318364265848";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+<script>
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '130318364265848',
+      xfbml      : true,
+      version    : 'v2.10'
+    });
+    FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+  };
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+   
+   function statusChangeCallback(response) {
+    //console.log('statusChangeCallback');
+    //console.log(response);
+    // The response object is returned with a status field that lets the
+    // app know the current login status of the person.
+    // Full docs on the response object can be found in the documentation
+    // for FB.getLoginStatus().
+    if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      //testAPI();
+	  console.log('connected');
+    } else {
+      // The person is not logged into your app or we are unable to tell.
+       console.log('not connected');
+    }
+  }
+</script>
+
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=130318364265848";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=501175573568871&amp;id=501100806909681" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/permalink.php?story_fbid=501175573568871&amp;id=501100806909681" class="fb-xfbml-parse-ignore"><p>Test Facebook Graph API for Post without photos.....</p>Posted by <a href="https://www.facebook.com/MakeupArtist-Community-501100806909681/">MakeupArtist Community</a> on&nbsp;<a href="https://www.facebook.com/permalink.php?story_fbid=501175573568871&amp;id=501100806909681">Embedded Normal Post</a></blockquote></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=130318364265848";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=501176296902132&amp;id=501100806909681" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/permalink.php?story_fbid=501176296902132&amp;id=501100806909681" class="fb-xfbml-parse-ignore"><p>One more post with photo&#x1f914;&#x1f914;&#x1f914;</p>Posted by <a href="https://www.facebook.com/MakeupArtist-Community-501100806909681/">MakeupArtist Community</a> on&nbsp;<a href="https://www.facebook.com/permalink.php?story_fbid=501176296902132&amp;id=501100806909681">Embedded Photo post</a></blockquote></div>
+
+</body>
+</html>
